@@ -8,57 +8,57 @@ del tavolo
 */
 
 const tableVip = [
-    place1 = {
+    place = {
         place: 1,
         name: 'Brad Pitt',
         table: 'vip'
     },
-    place2 = {
+    place = {
         place: 2,
         name: 'Johnny Depp',
         table: 'vip'
     },
-    place3 = {
+    place = {
         place: 3,
         name: 'Lady Gaga',
         table: 'vip'
     },
-    place4 = {
+    place = {
         place: 4,
         name: 'Cristiano Ronaldo',
         table: 'vip'
     },
-    place5 = {
+    place = {
         place: 5,
         name: 'Georgina Rodriguez',
         table: 'vip'
     },
-    place6 = {
+    place = {
         place: 6,
         name: 'Chiara Ferragni',
         table: 'vip'
     },
-    place7 = {
+    place = {
         place: 7,
         name: 'George Clooney',
         table: 'vip'
     },
-    place8 = {
+    place = {
         place: 8,
         name: 'Amal Clooney',
         table: 'vip'
     },
-    place9 = {
+    place = {
         place: 9,
         name: 'Fedez',
         table: 'vip'
     },
-    place10 = {
+    place = {
         place: 10,
         name: 'Amadeus',
         table: 'vip'
     },
-    place11 = {
+    place = {
         place: 11,
         name: 'Fiorello',
         table: 'vip'
@@ -67,5 +67,7 @@ const tableVip = [
 ]
 
 
+tableVip.forEach((e) => {
+    console.log(e)
+});
 
-console.table(tableVip)
