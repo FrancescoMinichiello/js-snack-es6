@@ -49,6 +49,8 @@ in maiuscolo con toUpperCase()
 70 a 120
 */
 
+
+/*
 const students = [
     { id: 213, name: "Marco della Rovere", grades: 78 },
     { id: 110, name: "Paola Cortellessa", grades: 96 },
@@ -66,3 +68,28 @@ console.log(over70)
 
 const idOver120 = students.filter(student => student.id > 120);
 console.log(idOver120)
+*/
+
+
+/*
+Snack 3
+ 1 - dichiarare un array di oggetti
+ 2 - inserire nell'array 2 proprietà : nome / peso
+ 3 - creare un ciclo che gira tra gli oggetti
+ 4 - stampare in console  
+ */
+
+const bikes = [
+    { name: "Wilier Zero SLR", weight: "6,8kg" },
+    { name: "Orbea Orca M10iLTD PWR", weight: "6,64kg" },
+    { name: "Look 795 Blade RS", weight: "7kg" },
+    { name: "Cube Litening Air C:68X SLT", weight: "6,6kg" }
+]
+
+let lightBicycle = bikes[0];
+console.log(lightBicycle)
+
+
+
+
+
