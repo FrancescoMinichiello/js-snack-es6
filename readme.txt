@@ -51,4 +51,3 @@ solo nomi e falli subiti e stampiamo tutto in console.
 
 *BONUS*
 Stampare in pagina oltre che in console!
-Ricordate sempre di fare la scaletta e che essendo Venerdì tocca lavorare :linguaccia_occhiolino:

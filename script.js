@@ -78,13 +78,14 @@ Snack 3
  4 - stampare in console  
  */
 
+const resultSnack3 = document.querySelector('p')
 
-/*
+
 const bikes = [
-   { name: "Wilier Zero SLR", weight: "6" },
-   { name: "Orbea Orca M10iLTD PWR", weight: "9" },
-   { name: "Look 795 Blade RS", weight: "7" },
-   { name: "Cube Litening Air C:68X SLT", weight: "5" }
+    { name: "Wilier Zero SLR", weight: "6" },
+    { name: "Orbea Orca M10iLTD PWR", weight: "9" },
+    { name: "Look 795 Blade RS", weight: "7" },
+    { name: "Cube Litening Air C:68X SLT", weight: "5" }
 ]
 
 let lightBicycle = bikes[0];
@@ -93,13 +94,13 @@ let lightBicycle = bikes[0];
 //3 - creare un ciclo che gira tra gli oggetti
 
 for (const bike of bikes) {
-   if (bike.weight < lightBicycle) {
-       lightBicycle = bike;
-   }
+    if (bike.weight < lightBicycle) {
+        lightBicycle = bike;
+    }
 }
 const { name, weight } = lightBicycle;
-console.log(`la bicicletta piu leggera è ${name}, pesa ${weight}kg`)
-*/
+resultSnack3.innerHTML = (`la bicicletta piu leggera è ${name}, pesa ${weight}kg`)
+
 
 
 
@@ -118,6 +119,9 @@ solo nomi e falli subiti e stampiamo tutto in console.
 
 
 //Snack 4
+//recupero gli elementi dal dom
+const result = document.querySelector('div');
+
 
 //1 creo un array di oggetti di squadre di calcio
 const squads = [
@@ -158,14 +162,23 @@ const squads = [
 //2 genero un numero random per assegnarlo ai punti e falli
 
 const getRandomNumbers = (min, max) => {
-    return Math.floor(Math.random() * (max - min + 1) + min);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 
 for (let squad of squads) {
     squad.points = getRandomNumbers(1, 100);
-    squad.foulsImmediately = getRandomNumbers(1, 100);
+    squad.foulsImmediately = getRandomNumbers(1, 10);
 }
 
 
-const squadFouls = squads.map((squad) => `${squad.points} ${squad.foulsImmediately}`);
-console.log(squadFouls)
+const squadFouls = squads.map((squad) =>
+    `<ul>
+
+    <li>La squadra ${squad.name} ha totalizzato ${squad.points} punti con ${squad.foulsImmediately} falli subiti</li>
+
+    </ul>`);
+
+result.innerHTML = squadFouls
+
+
+
